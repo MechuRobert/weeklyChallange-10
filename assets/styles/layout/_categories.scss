@@ -1,0 +1,64 @@
+.categories {
+    @include size(13%, 100%);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: $color-white;
+    box-shadow: $shadow;
+    z-index: 98;
+    visibility: hidden;
+
+    &__items {
+        @include position-column;
+        @include size(100%, 50%);
+        @include position-custom(50%, 50%);
+        transform: translate(-50%, -50%);
+
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        @include position-row;
+        @include size(70%, 100%);
+
+        justify-content: space-between;
+
+    }
+
+    &__item p {
+        width: 90%;
+        text-align: right;
+        padding-right: 15%;
+        color:$color-gray-font;
+        font-size: 18px;
+    }
+
+    &__item p:hover {
+        cursor: pointer;
+    }
+
+    &__item img:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: linear 0.1s;
+    }
+
+    &__show {
+        @include position-custom(90%, 50%);
+        @include size(100%, 100%);
+        @include position-column;
+        cursor:pointer;
+    }
+    &__show p{
+        color: $color-blue;
+    }
+
+    &__line {
+        @include size(50%, 3px);
+        background-color: $color-blue;
+    }
+
+}

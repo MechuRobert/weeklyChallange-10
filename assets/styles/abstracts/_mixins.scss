@@ -1,0 +1,39 @@
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin background-image($url) {
+    background: url($url) no-repeat center center;
+    background-size: cover;
+}
+
+@mixin position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+@mixin position-custom($top,$left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+@mixin position-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin position-row{
+    display: flex;
+    align-items: center;
+}

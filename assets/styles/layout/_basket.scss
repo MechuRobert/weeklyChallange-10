@@ -1,0 +1,36 @@
+.basket {
+    @include size(70%, 70%);
+    @include position-custom(50%, 50%);
+    transform: translate(-50%, -50%);
+    @include position-row;
+    visibility: hidden;
+
+
+
+    &__left,
+    &__right {
+        @include size(100%, 100%);
+        justify-content: space-around;
+
+        @include position-row;
+    }
+
+    &__result {
+        @include position-row;
+
+    }
+
+    &__result {
+        @include position-row;
+        color: $color-black;
+    }
+
+    &__result h4 {
+        @include font(32px, 300);
+    }
+
+    .button {
+        @include position-custom(90%, 90%);
+
+    }
+}

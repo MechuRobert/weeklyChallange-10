@@ -1,0 +1,82 @@
+.search {
+    @include position-custom(50%, 50%);
+    transform: translate(-50%, -50%);
+
+    @include size(70%, 70%);
+    @include position-column;
+    justify-content: space-between;
+    align-items: flex-start;
+    visibility: hidden;
+
+
+    &__typing {
+        @include size(100%, 100%)
+    }
+
+    &__form {
+        @include position-row;
+    }
+
+    &__form input[type="text"] {
+        @include font(156px, 300);
+        @include lato;
+    }
+
+    &__box {
+        @include size(100%, 200px);
+        border: none;
+        background-color: transparent;
+    }
+
+    &__close {
+        border: none;
+        background-color: transparent;
+        font-size: 56px;
+        color: $color-black;
+        opacity: 0.102;
+    }
+
+
+    &__line {
+        @include size(100%, 1px);
+        background-color: $color-black;
+        opacity: 0.102;
+    }
+
+    &__typing p {
+        color: $color-black;
+        opacity: 0.302;
+        font-size: 36px;
+        text-transform: unset;
+    }
+
+
+    &__results {
+        @include size(80%, 100%);
+        @include position-row;
+        justify-content: space-between;
+    }
+
+    &__result {
+        @include position-row;
+        color: $color-black;
+    }
+
+    &__result h4 {
+        @include font(72px, 300);
+    }
+
+    &__count {
+        @include size(100%, 100%);
+        @include position-column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__count p {
+        @include font(30px, bold);
+        color: $color-black;
+        text-transform: unset;
+    }
+
+}

@@ -1,0 +1,43 @@
+.menu__small {
+    @include position;
+    @include size(144px, 100%);
+    z-index: 1;
+    background-color: $color-white;
+    box-shadow: $shadow;
+
+    &__logo {
+        @include position-custom(2%, 50%);
+    }
+
+    &__icons {
+        @include position-column;
+        @include size(100%, 240px);
+        @include position-custom(20%, 50%);
+        justify-content: space-between;
+
+    }
+    &__icons img{
+        cursor: pointer;
+
+    }
+
+    &__icons img:hover {
+        transform: scale(1.5);
+        transition: linear 0.1s;
+
+    }
+
+    &__footer {
+        @include position-custom(90%, 50%);
+    }
+    &__footer img{
+        cursor: pointer;
+
+    }
+
+    &__footer img:hover {
+        transform: scale(1.5);
+        transition: linear 0.1s;
+
+    }
+}

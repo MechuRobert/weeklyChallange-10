@@ -1,0 +1,19 @@
+.menu__hamburger {
+    @include size(67px, 67px);
+    @include position-custom(5%, 97%);
+    background-color: $color-white;
+    border-radius: 100%;
+    z-index: 99;
+    box-shadow: $shadow;
+
+
+    &__icon {
+        @include position-custom(50%, 50%);
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+}
+
+
+  

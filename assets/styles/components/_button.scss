@@ -1,0 +1,21 @@
+.button{
+   @include size(215px,54px);
+    background-color:$color-blue;
+
+    border:none;
+    border-radius: 100px;
+
+    cursor: pointer;
+    
+    transition: linear 0.1s;
+}
+.button:hover{
+    background-color: $color-blue-hover;
+}
+
+
+
+  
+
+
+  

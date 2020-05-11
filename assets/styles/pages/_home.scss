@@ -1,0 +1,17 @@
+.home {
+    @include position;
+    @include size(100%, 100%);
+    @include background-image("/assets/images/home__backgorund.png");
+    opacity: 1;
+
+    &__content {
+        @include position;
+        @include position-column;
+    }
+
+    &__behind {
+        @include position-custom(5%, 50%);
+
+    }
+
+}

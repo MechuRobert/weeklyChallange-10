@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 2300px;
+    height: 1438px;
+    margin:auto;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.wrapper {
+    @include size(100%,100%);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
